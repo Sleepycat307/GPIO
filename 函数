@@ -1,0 +1,24 @@
+
+
+1. **wiringPiSetup()**：初始化WiringPi库，必须在使用其他WiringPi函数之前调用。
+
+2. **pinMode(pin, mode)**：设置指定引脚的模式，可以是输入模式（INPUT）或输出模式（OUTPUT）。
+
+3. **digitalRead(pin)**：读取指定引脚的电平状态，返回值为LOW（低电平，0V）或HIGH（高电平，3.3V）。
+
+4. **digitalWrite(pin, value)**：设置指定引脚的电平状态，value可以是LOW或HIGH。
+
+5. **pullUpDnControl(pin, pud)**：配置指定引脚的上拉或下拉电阻，pud可以是PUD_OFF、PUD_UP或PUD_DOWN。
+
+以上函数属于 WiringPi 库的一部分。除了 WiringPi，BCM2835 库也提供了一系列用于控制GPIO的函数，例如：
+
+1. **bcm2835_init()**：初始化BCM2835库。
+
+2. **bcm2835_gpio_fsel(pin, mode)**：设置指定引脚的功能，可以是输入、输出或其他特殊功能。
+
+3. **bcm2835_gpio_lev(pin)**：读取指定引脚的电平状态，返回值为LOW或HIGH。
+
+4. **bcm2835_gpio_write(pin, value)**：设置指定引脚的电平状态，value可以是LOW或HIGH。
+
+5. **bcm2835_gpio_set_pud(pin, pud)**：配置指定引脚的上拉或下拉电阻，pud可以是BCM2835_GPIO_PUD_OFF、BCM2835_GPIO_PUD_UP或BCM2835_GPIO_PUD_DOWN。
+
